@@ -240,7 +240,7 @@ body {
     font-weight: 100;
     color: black;
     margin-bottom: 3rem;
-    color: white;
+    /* color: white; */
 }
 
 .workLink {
