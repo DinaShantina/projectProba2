@@ -14,5 +14,4 @@
   background-size: initial, cover, cover, cover;
   background-blend-mode: normal, normal, normal, color-dodge;
   animation: animation linear 50s infinite forwards;
-  /* z-index: -11111; */
 }

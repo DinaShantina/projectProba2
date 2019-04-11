@@ -189,7 +189,14 @@ body {
 .ripple {
     background-position: center;
     transition: background 0.8s;
+}
+
+.ripple a {
     color: white;
+}
+
+.ripple a:hover {
+    text-decoration: none;
 }
 
 .ripple:hover {
