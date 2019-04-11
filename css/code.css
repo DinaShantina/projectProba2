@@ -12,8 +12,7 @@
   height: 100vh;
   background: url('../img/moon.png') 160% 70px no-repeat, url('../img/upper-stars2.png') 0px 0px repeat, url('../img/lower-stars2.png') 0px 0px repeat, url('../img/blue-nebula-large.png') 0px 0px repeat rgb(7, 25, 35);
   background-size: initial, cover, cover, cover;
-  background-blend-mode: normal;
+  background-blend-mode: normal, normal, normal, color-dodge;
   animation: animation linear 50s infinite forwards;
   /* z-index: -11111; */
 }
-
