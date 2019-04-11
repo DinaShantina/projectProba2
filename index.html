@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="keywords">
+	<meta name="author" content="Rosik Stefan/ Dina Shantina">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Map CSS -->
+	<link href="dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bar.css">
+	<link href="css/docs.css" rel="stylesheet">
+	<link href="css/code.css" rel="stylesheet">
+	<link href="css/flag-icon.css" rel="stylesheet">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row keepGoing firstBg background-first">
+			<div class="col-lg-12 col-md-12 firstBgRgba header text-center firstPadTop color-change-3x">
+				<div class="circle">
+					<i class="fas fa-podcast"></i>
+				</div>
+				<h1 class="text-uppercase">Living Infographic</h1>
+				<h2 class="text-uppercase">The most important job
+					factors for Developers</h2>
+				<h4 class="text-right">Based on </h4>
+				<ul class="list-unstyled list-inline">
+					<li>2</li>
+					<li>4</li>
+					<li>2</li>
+					<li>6</li>
+					<li>4</li>
+				</ul>
+				<h4 class="text-left">responses so far</h4>
+
+				<div class="col-lg-12 col-md-12 text-center btns">
+					<button class="btn respond ripple">RESPOND</button>
+
+
+					<!-- <div class="col-lg-12 col-md-12 text-center btns">
+						<button class="btn tweet">TWEET</button>
+						<button class="btn tweet">SHARE</button>
+					</div> -->
+
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- --------------------------PREFACE------------------------------ -->
+
+		<div class="row padTopBot positionRelativeRow secoundRow bg-purple">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+				<div class='iconWrapper'>
+					<i class="far fa-bookmark icon"></i>
+				</div>
+				<h2 class="text-center prefaceH2">
+					PREFACE
+				</h2>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 prefaceText text-center">
+
+				<p>
+					At <a href="#" class="workLink">Workshape.io</a>, we care deeply about what developers want from
+					their working lives. Since we always want to know more about this topic, we decided to ask the
+					developer community directly. Over the past 6 months, we’ve asked developers from all over the
+					world
+					to contribute to a survey to rate what factors they value the most when evaluating job
+					opportunities.
+				</p>
+				<p>
+					15000+ responses later(!) and we’re ready to share our findings. We’ve made this ‘Living
+					Infographic’ in which users can interactively explore the response data. It pulls the data
+					directly
+					from survey on a hourly basis and so will self update as more developers complete the survey.
+				</p>
+				<p>
+					With many thanks to every single developer that completed the survey so far, we are happy to
+					share
+					this little page of insights with you.
+				</p>
+				<hr class="firstHr">
+				<p>
+					Please note that this is still a relatively small data set (<span class="blackSpan">24264</span>
+					fully completed responses) which we are looking to expand, and as such may not be representative
+					of
+					every demographic and industry.
+				</p>
+				<p>
+					We also want to say that both the survey and the infographic has been built by humble
+					developers,
+					without a data science background. It's not perfect, but we hope to improve upon its
+					implementation
+					and will welcome your feedback and objections.
+				</p>
+				<p>
+					If you like what we're doing, help us get more spread by completing and sharing the <a href="#"
+						class="workLink">survey</a>.
+				</p>
+				<p>
+					Enjoy and thank you!
+				</p>
+			</div>
+			<!-- <--------------KEEP GOING ICON ANIMATED N1----------------------->
+
+			<div class="afterGoing text-center">
+				<p>KEEP GOING</p>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+		</div>
+
+		<!-- <--------------------------DATASET------------------------------>
+		<div class="row padTopBot positionRelativeRow thirdRow">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 wrap ">
+				<div class="text-center">
+					<div class='iconWrapper icon-white'>
+						<i class="far fa-chart-bar icon"></i>
+					</div>
+
+					<h2 class="text-center">DATASET</h2>
+					<p class="font-text firstP">In the survey, we asked developers to rate on a scale from 1 to 10
+						the
+						importance for them of the
+						following job factors (Where 1 is Irrelevant and 10 Important):</p>
+				</div>
+				<ol class="ol">
+					<li>
+						<i class="fas fa-wallet"></i>
+						<span>Salary</span>
+					</li>
+					<li>
+						<i class="fab fa-buffer"></i>
+						<span>Tech Stack</span>
+						<span class="second">The technologies and programming languages you will need to work
+							with.</span>
+					</li>
+					<li>
+						<i class="fas fa-tags"></i>
+						<span>Job Definition</span>
+						<span class="second">What the job entails and how you will be spending your time.</span>
+					</li>
+					<li>
+						<i class="far fa-user"></i>
+						<span>Team Members</span>
+						<span class="second">What the team around you are like.</span>
+					</li>
+					<li>
+						<i class="fas fa-map-signs"></i>
+						<span>Industry</span>
+						<span class="second">What business sector the company operates in.</span>
+					</li>
+					<li>
+						<i class="fas fa-pencil-ruler"></i>
+						<span>Product</span>
+						<span class="second">What the product is like.</span>
+					</li>
+					<li>
+						<i class="fas fa-chart-pie"></i>
+						<span>Stock Options</span>
+					</li>
+					<li>
+						<i class="fas fa-map-marked-alt"></i>
+						<span>Location</span>
+						<span class="second">The location you will work out of.</span>
+					</li>
+					<li>
+						<i class="fas fa-bullseye"></i>
+						<span>Commute</span>
+						<span class="second">How long your journey will be</span>
+					</li>
+					<li>
+						<i class="fas fa-globe"></i>
+						<span>Company Size</span>
+						<span class="second">How many employees the company has.</span>
+					</li>
+					<li>
+						<i class="fas fa-gift"></i>
+						<span>Benefits + Perks</span>
+						<span class="second">Inclusion of Pension, Medical Care, Car, etc.</span>
+					</li>
+
+				</ol>
+				<p class="font-text text-center">Below are displayed the average ratings (Scored 1 to 10) split by
+					category between
+					all 24264
+					developers that completed the questionnaire.
+				</p>
+
+				<ul class="list-inline ul">
+					<li class="li">
+						<div class="flex">
+							<i class="fas fa-wallet"></i>
+							<span>Salary</span>
+							<div class="progress-vertical">
+								<div class="fill barSallary bar"><span class="text-white text-span">8.2</span></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fab fa-buffer"></i>
+							<span>Tech</span>
+							<div class="progress-vertical">
+								<div class="fill barTech bar"><span class="text-white text-span">8.2</span></div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-tags"></i>
+							<span>Definition</span>
+							<div class="progress-vertical">
+								<div class="fill barDefinition bar"><span class="text-white text-span">8.2</span></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="far fa-user"></i>
+							<span>Team</span>
+							<div class="progress-vertical">
+								<div class="fill barTeam bar"><span class="text-white text-span">8.2</span></div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-map-signs"></i>
+							<span>Industry</span>
+							<div class="progress-vertical">
+								<div class="fill barIndustry bar "><span class="text-white 	text-span">8.2</span></div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-pencil-ruler"></i>
+							<span>Product</span>
+							<div class="progress-vertical">
+								<div class="fill barProduct bar"><span class="text-white text-span">8.2</span></div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-chart-pie"></i>
+							<span>Options</span>
+							<div class="progress-vertical">
+								<div class="fill barOptions bar "><span class="text-white text-span">8.2</span></div>
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-map-marked-alt"></i>
+							<span>Location</span>
+							<div class="progress-vertical">
+								<div class="fill barLocation bar "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-bullseye"></i>
+							<span>Commute</span>
+							<div class="progress-vertical">
+								<div class="fill barCommute bar"><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-globe"></i>
+							<span>Org. Size</span>
+							<div class="progress-vertical">
+								<div class="fill barOrg bar"><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-gift"></i>
+							<span>Benefits</span>
+							<div class="progress-vertical">
+								<div class="fill barBenefits bar"><span class="text-white text-span">8.2</span>
+								</div>
+
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- <------KEEP GOING ICON ANIMATED N2------->
+
+			<div class="afterGoing text-center">
+				<p>KEEP GOING</p>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+			<!-- ----------------------------------------------------- -->
+		</div>
+
+
+		<!-- ---------------------CHANGE OVER EXPIRIENCE------------------- -->
+
+		<div class="row padtop positionRelativeRow fourthRow">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+				<div class='iconWrapper icon-white'>
+					<i class="fas fa-chart-line icon"></i>
+				</div>
+				<h2 class="text-center text-uppercase prefaceH2">
+					Change over experience
+				</h2>
+				<p class="text-center">The developers in our dataset are distributed in the following levels of
+					seniority:</p>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+				<ul class="list-unstyled list-inline ul ul2">
+					<li>
+						<div class="flex">
+							<span>Under 1 year</span>
+							<div class="progress-vertical progress-vertical2">
+								<div class="fill bar-one bar bar2 "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<span>1-4 years</span>
+							<div class="progress-vertical progress-vertical2">
+								<div class="fill bar-two bar bar2 "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<span>4-7 years</span>
+							<div class="progress-vertical progress-vertical2">
+								<div class="fill bar-three bar bar2 "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<span>7-10 years</span>
+							<div class="progress-vertical progress-vertical2">
+								<div class="fill bar-four bar bar2 "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<span>10+ years</span>
+							<div class="progress-vertical progress-vertical2">
+								<div class="fill bar-five bar bar2 "><span class="text-white text-span">8.2</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row positionRelativeRow padTopBot">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+				<p class="purpleSpans text-center">
+					By observing slight trend differences over several levels of seniority in our dataset we can
+					observe
+					that <span>Product</span>, <span>Org. Size</span>, <span>Options</span>, <span>Benefits</span>
+					and
+					<span>Industry</span> show an increase of interest over experience, while
+					<span>Definition</span>,
+					<span>Team</span>, <span>Tech</span>, <span>Salary</span>, <span>Location</span> and
+					<span>Commute</span> tend to become less important.
+				</p>
+				<p class="text-center">
+					And here's a breakdown of each factor we asked to rate:
+				</p>
+				<div class="row chartRow">
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-wallet icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Salary loses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart1"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fab fa-buffer icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Tech loses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart2"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-tags icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Definition loses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart3"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="far fa-user icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Team loses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart4"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-map-signs icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Industry gains</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart5"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-pencil-ruler icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Product gains</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart6"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-chart-pie icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Options gains</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart7"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-map-marked-alt icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Location loses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart8"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-bullseye icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Commute losses</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart9"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-globe icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Org. Size gains</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart10"></canvas>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<div>
+							<i class="fas fa-gift icon-grey"></i>
+						</div>
+						<p class="ChartHeader"><span class="ChartText">Benefits gains</span> <span
+								class="boldTextChart">0.00/10</span> interest points over time</p>
+						<canvas id="myChart11"></canvas>
+					</div>
+				</div>
+			</div>
+			<!-- <------KEEP GOING ICON ANIMATED N3------->
+
+			<div class="afterGoingSlower text-center">
+				<p>KEEP GOING</p>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+			<!-- ----------------------------------------------------- -->
+		</div>
+
+		<!-- ------------------GENDER DISTRIBUTION------------------- -->
+		<div class="row padTopBot positionRelativeRow bg-grey">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 padd-one">
+				<div class="text-center">
+					<div class='iconWrapper icon-white'>
+						<i class="fas fa-venus-mars icon"></i>
+					</div>
+					<h2 class="text-center">GENDER DISTRIBUTION</h2>
+					<p class="font-text">Out of the <span class="sp-bold">24264 developers</span> that took our
+						survey,
+						<span class="sp-violet sp-bold ">9135</span>
+						identified as males,<span class="sp-violet sp-bold ">748</span> as
+						female and <span class="sp-violet sp-bold ">92</span> as other.
+					</p>
+					<canvas id="myChartD"></canvas>
+					<div class="DB">
+						<p class="beforeSquare">Male <span class="text-muted">(9135)</span></p>
+						<p class="beforeSquare">Female <span class="text-muted">(748)</span></p>
+						<p class="beforeSquare">Other <span class="text-muted">(92)</span></p>
+					</div>
+				</div>
+
+				<ul class="list-inline ul ulSmalls">
+					<li class="li">
+						<div class="flex">
+							<i class="fas fa-wallet"></i>
+							<span>Salary</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-salary bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-salary bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-salary bar bar4"> <span class="text-white">8.2</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fab fa-buffer"></i>
+							<span>Tech</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-tech bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-tech bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-tech bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-tags"></i>
+							<span>Definition</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-def bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-def bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-def bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="far fa-user"></i>
+							<span>Team</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-team bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-team bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-team bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-map-signs"></i>
+							<span>Industry</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-ind bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-ind bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-ind bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-pencil-ruler"></i>
+							<span>Product</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-pro bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-pro bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-pro bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="flex">
+							<i class="fas fa-chart-pie"></i>
+							<span>Options</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-opt bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-opt bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-opt bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-map-marked-alt"></i>
+							<span>Location</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-loc bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-loc bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-loc bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-bullseye"></i>
+							<span>Commute</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-com bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-com bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-com bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-globe"></i>
+							<span>Org. Size</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-org bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-org bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-org bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="flex">
+							<i class="fas fa-gift"></i>
+							<span>Benefits</span>
+							<div class="flex2">
+								<div class="barSmall progress-vertical">
+									<div class="fill bar1-ben bar bar1"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar2-ben bar bar3"><span class="text-white">8.2</span></div>
+								</div>
+								<div class="barSmall progress-vertical">
+									<div class="fill bar3-ben bar bar4"><span class="text-white">8.2</span></div>
+								</div>
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- <------KEEP GOING ICON ANIMATED N4------->
+
+			<div class="afterGoing text-center">
+				<p>KEEP GOING</p>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+			<!-- ----------------------------------------------------- -->
+		</div>
+		<!-- ------------------RELEVANCE DISTRIBUTION------------------- -->
+		<div class="row padTopBot sixthRow positionRelativeRow">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+				<div class='iconWrapper icon-white'>
+					<i class="fas fa-chart-line icon"></i>
+				</div>
+				<h2 class="text-center relevance">RELEVANCE DISTRIBUTION</h2>
+				<p class="text-center biggerFont">
+					The following interactive map helps you explore geographical trends of relevance based om the
+					average values we've collected between all nations with 50+ responses.
+				</p>
+				<p class="blackBoldText text-center">
+					You can click on each point of the legend to isolate them, or in the individual countries to see
+					their stats.
+				</p>
+
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center dflexMap">
+				<div class="flex2a">
+					<div class="flex bg-darkGrey sallary">
+						<i class="fas fa-wallet"></i>
+						<span>Salary</span>
+					</div>
+					<div class="flex bg-darkGrey tech">
+						<i class="fab fa-buffer"></i>
+						<span>Tech</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-tags"></i>
+						<span>Definition</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="far fa-user"></i>
+						<span>Team</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-map-signs"></i>
+						<span>Industry</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-pencil-ruler"></i>
+						<span>Product</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-chart-pie"></i>
+						<span>Options</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-map-marked-alt"></i>
+						<span>Location</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-bullseye"></i>
+						<span>Commute</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-globe"></i>
+						<span>Org. Size</span>
+					</div>
+
+					<div class="flex bg-darkGrey">
+						<i class="fas fa-gift"></i>
+						<span>Benefits</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+				<div class="row overMap">
+					<div class="col-lg-3 col-md-3 leftOverMap text-center">
+						<h5>LEGEND</h5>
+						<ul class="list-unstyled">
+							<li>Lowest interest</li>
+							<li>Average interest</li>
+							<li>Highest interest</li>
+							<li>Insufficient interest</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 text-center">
+						<h4 class="Italic">No Country Selected</h4>
+						<h5>Lowest interest in <span class="overMapMiniText">salary</span>: <span
+								class="sp-bold">Sweden</span> - Highest: <span class="sp-bold">Philippines</span></h5>
+					</div>
+					<div class="col-lg-3 col-md-3 rightOverMap text-center">
+						<h5>COLOR CODING</h5>
+						<div class="rankAndValue">
+							<span class="byRanking">BY RANKING</span>
+							<span class="byValue">BY VALUE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="vmap" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+
+			</div>
+			<div class="afterGoing text-center">
+				<p>KEEP GOING</p>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+		</div>
+		<!-----------------------COUNTRIES BREAKDOWN---------------------------->
+
+		<div class="row padTopBot sixthRow positionRelativeRow">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+				<div class='iconWrapper icon-white'>
+					<i class="far fa-flag icon"></i>
+				</div>
+				<h2 class="text-center relevance">COUNTRIES BREAKDOWN</h2>
+				<p class="font-text firstP text-center">The following module breaks down each of the values we asked to
+					evaluate to
+					display the countries that scored highest and lowest relevancy in average.</p>
+				<p class="font-text firstP text-center">Only countries with a minimum of 50 responses are considered in
+					the following charts.</p>
+
+				<!-- FIRST ROW SALARY AND TECH -->
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+
+						<div class="flex2 flags-i">
+							<i class="fas fa-wallet"></i>
+							<span>Salary</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group">
+
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-sal-mk border-top">
+									<div class="wtf">
+										<span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-sal-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-sal-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-sal-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6">
+
+						<div class="flex2 flags-i">
+							<i class="fab fa-buffer"></i>
+							<span>Tech</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group">
+
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-tech-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-tech-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-tech-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-tech-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- SECOND ROW DEFINITION AND TEAM -->
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-tags"></i>
+							<span>Definition</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group flag-ul">
+
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-def-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-def-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-def-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-def-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="far fa-user"></i>
+							<span>Team</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group">
+
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-team-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-team-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-team-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-team-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- THIRD ROW INDUSTRY AND PRODUCT -->
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-chart-pie"></i>
+							<span>Industry</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group flag-ul">
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-ind-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-ind-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-ind-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-ind-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-map-marked-alt"></i>
+							<span>Product</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+
+						<ul class="list-group">
+
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-pro-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad">
+								<div class="flags-size flags-pro-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-pro-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-pro-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- FOURTH ROW INDUSTRY AND PRODUCT -->
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-bullseye"></i>
+							<span>Commute</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group flag-ul">
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-com-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-com-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-com-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-com-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-globe"></i>
+							<span>Org. Size</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+
+						<ul class="list-group">
+
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-org-mk border-top">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad">
+								<div class="flags-size flags-org-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list2 no-pad">
+								<div class="flags-size flags-org-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size border-bottom flags-org-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- FIFTH ROW INDUSTRY AND PRODUCT -->
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="flex2 flags-i">
+							<i class="fas fa-gift"></i>
+							<span>Benefits</span>
+						</div>
+						<div class="high-low">
+							<span class="high">HIGHEST</span>
+							<span class="low">LOWEST</span>
+						</div>
+						<ul class="list-group flag-ul">
+
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-ben-mk">
+									<div class="wtf"><span class="text-country text-muted">1</span>
+										<span class="flag-icon flag-icon-mk" title="mk"></span>
+										<span class="text-country">Macedonia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-ben-cr">
+									<div class="wtf"><span class="text-country text-muted">2</span>
+										<span class="flag-icon flag-icon-hr" title="hr"></span>
+										<span class="text-country">Croatia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list2 no-pad ">
+								<div class="flags-size flags-ben-bg">
+									<div class="wtf"><span class="text-country text-muted">3</span>
+										<span class="flag-icon flag-icon-bg" title="bg"></span>
+										<span class="text-country">Bulgaria</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+							<li class="list-group-item grey-list no-pad ">
+								<div class="flags-size flags-ben-rs">
+									<div class="wtf"><span class="text-country text-muted">4</span>
+										<span class="flag-icon flag-icon-rs" title="rs"></span>
+										<span class="text-country">Serbia</span>
+										<span>(Avg. 9.15)</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="di	st/jquery.vmap.js"></script>
+	<script type="text/javascript" src="dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.vmap.sampledata.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/bar.js"></script>
+	<script src="js/charts.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/docs.js"></script>
+</body>
+
+</html>
