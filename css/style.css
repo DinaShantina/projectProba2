@@ -116,10 +116,10 @@ body {
 }
 
 .header h2 {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); */
     font-size: 30px;
     font-weight: 100;
-    opacity: 0.8;
+    color: white;
 }
 
 .importantJobFactors {
@@ -157,7 +157,7 @@ body {
 
 .header ul li {
     background-color: #212121;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin: 0;
     border-radius: 3px;
     color: #56d7dd;
@@ -291,8 +291,8 @@ body {
 }
 
 .blackSpan {
-    color: grey;
-    font-weight: 900;
+    color: white;
+    /* font-weight: 900; */
     font-size: 16px;
 }
 
@@ -614,7 +614,12 @@ ul span {
     margin: 0;
     margin-bottom: 5px;
     color: rgba(51, 51, 51, 0.6);
+    color: white;
     font-size: 1.6rem;
+}
+
+.text-greyAfter {
+    color: grey !important;
 }
 
 @keyframes aftergoing {
@@ -642,6 +647,7 @@ ul span {
     font-size: 2rem;
     border-radius: 50%;
     color: rgba(51, 51, 51, 0.6);
+    color: white;
     /* color: #6630d8; */
 }
 
@@ -867,7 +873,7 @@ ul span {
 
 .flags-i i {
     font-size: 2.2rem;
-    color: rgba(51, 51, 51, 0.6);
+    color: #6630D8;
     margin: 0 1%;
 }
 
@@ -880,7 +886,7 @@ ul span {
 }
 
 .flags-size {
-    background-color: grey;
+    background-color: rgb(197, 197, 197);
     padding: 5% 3%;
 }
 
@@ -899,7 +905,7 @@ ul span {
 }
 
 .flags-i {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .wtf {
@@ -940,7 +946,7 @@ ul span {
 }
 
 .low {
-    background-color: rgb(74, 151, 185);
+    background-color: #6630D8;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -951,7 +957,11 @@ ul span {
     width: 130px;
     margin: auto;
     position: absolute;
-    top: 20px;
+    top: 29px;
     right: 20px;
     z-index: 2;
+}
+
+.my-t {
+    margin-top: 5%;
 }
