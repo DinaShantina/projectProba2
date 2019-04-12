@@ -21,7 +21,7 @@
 }
 
 .progress-vertical2 {
-    width: 12rem;
+    width: 14rem;
 }
 
 .barSmall {
@@ -30,7 +30,7 @@
 }
 
 .bar1 {
-    background-color: #56d7dd;
+    background-color: #7738ff;
     background-image: none;
 }
 
@@ -55,11 +55,11 @@
 }
 
 .bar4 {
-    background-color: #6630d8;
+    background-color: #fe6382;
     background-image: none;
 }
 
 .bar3 {
-    background-color: #d83c6b;
+    background-color: #9be4ef;
     background-image: none;
 }

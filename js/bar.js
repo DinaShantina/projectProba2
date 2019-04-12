@@ -172,7 +172,7 @@ let flagIndCr = $('.flags-ind-cr');
 let flagIndBg = $('.flags-ind-bg');
 let flagIndRs = $('.flags-ind-rs');
 
-flagIndMk.css({ 'width': '50%' });
+flagIndMk.css({ 'width': '20%' });
 flagIndCr.css({ 'width': '90%' });
 flagIndBg.css({ 'width': '80%' });
 flagIndRs.css({ 'width': '60%' });
@@ -183,7 +183,7 @@ let flagProBg = $('.flags-pro-bg');
 let flagProRs = $('.flags-pro-rs');
 
 flagProMk.css({ 'width': '50%' });
-flagProCr.css({ 'width': '90%' });
+flagProCr.css({ 'width': '20%' });
 flagProBg.css({ 'width': '80%' });
 flagProRs.css({ 'width': '60%' });
 

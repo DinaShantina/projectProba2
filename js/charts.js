@@ -415,12 +415,12 @@ $(function () {
 					92
 				],
 				backgroundColor: [
-					`#56d7dd`,
-					`#6630d8`,
-					`#d83c6b`
+					`#7738ff`,
+					`#9be4ef`,
+					`#fe6382`
 				],
 				borderWidth: 1,
-				borderColor: "black",
+
 			}]
 		},
 		options: {
