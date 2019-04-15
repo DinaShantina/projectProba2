@@ -1,14 +1,8 @@
-jQuery(document).ready(function () {
-  jQuery('#vmap').vectorMap({
-    map: 'world_en',
-    backgroundColor: '#333333',
-    color: '#ffffff',
-    hoverOpacity: 0.7,
-    selectedColor: '#666666',
-    enableZoom: true,
-    showTooltip: true,
-    scaleColors: ['#C8EEFF', '#006491'],
-    values: sample_data,
-    normalizeFunction: 'polynomial'
-  });
+$(function(){
+    $('.mapLinks').click(function(e){
+        e.preventDefault();
+        $('.mapLinks').not($(this)).children('path').css({fill: 'white'});
+        $(this).children('path').css({fill: 'rgb(74, 151, 185)'});
+        console.log($(this).attr("id"));
+    });
 });

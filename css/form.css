@@ -158,15 +158,30 @@ form {
 	display: inline-block;
 	width: 49%;
 }
-
+.input-group{
+	width: 100%;
+}
 .input12 {
 	margin-top: 40px;
-	font-size: 30px;
-	width: 100%;
+	font-size: 35px;
+	width: 80%;
+	margin-right: 15px;
 	border-width: 0;
 	border-bottom: 1.5px solid #6630d8;
 }
-
+.btn12{
+	background-color: #7738FF;
+	color: white;
+	padding: 1.2rem 2.8rem;
+}
+.btn12:hover{
+	opacity: 0.9;
+	color: white;
+}
+.btn12:focus{
+	outline: none;
+	color: white;
+}
 .input12::placeholder {
 	color: #6630d8;
 	font-size: 30px;
@@ -191,7 +206,10 @@ form {
 	font-size: 18px;
 	border-radius: 4px;
 }
-
+.LabelsRadiosLast label{
+	margin-right: 7px;
+	width: 22%;
+}
 .LabelsRadios label:hover {
 	background-color: #6630d8;
 	cursor: pointer
@@ -202,7 +220,7 @@ form {
 }
 
 .question15 {
-	margin-bottom: 15rem;
+	margin-bottom: 20rem;
 }
 
 .SubmitBtn {
@@ -279,4 +297,21 @@ form {
 	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
 	position: absolute;
 	overflow: hidden;
+}
+.progressText{
+	background-color: transparent;
+	border: none;
+	position: relative;
+	z-index: 999;
+}
+.progressText:hover{
+	cursor: pointer;
+}
+.progressText:focus{
+	outline: none;
+	color: black;
+}
+#pb, #progress:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }

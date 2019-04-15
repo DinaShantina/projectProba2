@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 	<meta name="keywords">
@@ -15,19 +16,22 @@
 
 
 	<!-- Font-awesome 4.7 cdn -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
+
 <body>
 
-	<div id="pb">  	
-		<div id="progress">
-			
-		</div>
-		<span class="progressText">0-15 Answered</span>
-	</div>
+
 	<div class="wrapper">
 		<form action="post">
+			<div id="pb">
+				<div id="progress">
+
+				</div>
+				<button class="progressText">0-15 Answered</button>
+			</div>
 			<div id="1" class="que question1">
 				<h2 class="questionHeader q1">Job Definition *</h2>
 				<h4 class="text-muted">What the job entails and how you will be spending your time.</h4>
@@ -311,7 +315,7 @@
 				<h4 class="text-muted">Inclusion of Pension, Medical Care, Car, etc.</h4>
 				<div class="mainDivChoices">
 					<label for="BP1">1</label>
-					<input name="BenefitsPerks" id="BP" type='radio' class="btn" value="1">
+					<input name="BenefitsPerks" id="BP1" type='radio' class="btn" value="1">
 					<label for="BP2">2</label>
 					<input name="BenefitsPerks" id="BP2" type='radio' class="btn" value="2">
 					<label for="BP3">3</label>
@@ -335,9 +339,11 @@
 				<span class="text-right">Important</span>
 			</div>
 			<div id="12" class="que question12">
-				<h2 class="questionHeader q12">Is there anything else that is important to you when considering a new role that we missed?</h2>
+				<h2 class="questionHeader q12">Is there anything else that is important to you when considering a new
+					role that we missed?</h2>
 				<div>
 					<input name="importantToYou" type="text" class="input12 key" placeholder="Type your answer here...">
+					<button type="button" class="btn btn12 ">Submit</button>
 				</div>
 			</div>
 			<div id="13" class="que question13">
@@ -368,14 +374,23 @@
 			</div>
 			<div id="15" class="que question15">
 				<h2 class="questionHeader q15">Location *</h2>
-				<div>
-					<input name="YourLocation" type="text" class="input12 location key" placeholder="Enter your first letter of your country">
+				<div class="mainDivChoices LabelsRadios LabelsRadiosLast">
+					<label for="MK">Macedonia</label>
+					<input name="experience" type="radio" id="MK" value="Macedonia">
+					<label for="SR">Serbia</label>
+					<input name="experience" type="radio" id="SR" value="Serbia">
+					<label for="BG">Bulgaria</label>
+					<input name="experience" type="radio" id="BG" value="Bulgaria">
+					<label for="CR">Croatia</label>
+					<input name="experience" type="radio" id="CR" value="Croatia">
+					<label for="OT">Other</label>
+					<input name="experience" type="radio" id="OT" value="Other">
+
 				</div>
 			</div>
-			<button class="btn SubmitBtn" type="submit" disabled>Submit</button>
 		</form>
 	</div>
-	
+
 	<!-- jQuery library -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
@@ -384,4 +399,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
 	<script src="js/ButtonsValueForm.js"></script>
 </body>
+
 </html>
