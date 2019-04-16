@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
 
-	$(window).scrollTop(0);
+	// $(window).scrollTop(0);
 
 	$('.bar').hover(function () {
 		$(this).find($('.text-white')).css({ 'color': 'white', 'cursor': 'default', "font-weight": "bold" });

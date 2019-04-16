@@ -18,6 +18,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-image: url('../img/Form-bg.svg');
+	background-size: cover;
 }
 
 form {
@@ -158,9 +160,11 @@ form {
 	display: inline-block;
 	width: 49%;
 }
-.input-group{
+
+.input-group {
 	width: 100%;
 }
+
 .input12 {
 	margin-top: 40px;
 	font-size: 35px;
@@ -169,19 +173,23 @@ form {
 	border-width: 0;
 	border-bottom: 1.5px solid #6630d8;
 }
-.btn12{
+
+.btn12 {
 	background-color: #7738FF;
 	color: white;
 	padding: 1.2rem 2.8rem;
 }
-.btn12:hover{
+
+.btn12:hover {
 	opacity: 0.9;
 	color: white;
 }
-.btn12:focus{
+
+.btn12:focus {
 	outline: none;
 	color: white;
 }
+
 .input12::placeholder {
 	color: #6630d8;
 	font-size: 30px;
@@ -206,10 +214,12 @@ form {
 	font-size: 18px;
 	border-radius: 4px;
 }
-.LabelsRadiosLast label{
+
+.LabelsRadiosLast label {
 	margin-right: 7px;
 	width: 22%;
 }
+
 .LabelsRadios label:hover {
 	background-color: #6630d8;
 	cursor: pointer
@@ -298,19 +308,23 @@ form {
 	position: absolute;
 	overflow: hidden;
 }
-.progressText{
+
+.progressText {
 	background-color: transparent;
 	border: none;
 	position: relative;
 	z-index: 999;
 }
-.progressText:hover{
+
+.progressText:hover {
 	cursor: pointer;
 }
-.progressText:focus{
+
+.progressText:focus {
 	outline: none;
 	color: black;
 }
+
 #pb, #progress:hover {
 	cursor: pointer;
 	opacity: 0.8;

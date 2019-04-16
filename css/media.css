@@ -1,0 +1,169 @@
+@media screen and (max-width: 2560px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1134px) {
+    .bar-tel {
+        width: 100%;
+    }
+    .li {
+        width: 7%;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .thirdRow p {
+        font-size: 15px;
+    }
+    .second {
+        font-size: 1.3rem;
+    }
+    .ol span {
+        font-size: 1.4rem;
+    }
+    .ul li {
+        margin: 0;
+    }
+    .progress-vertical {
+        width: 37px;
+    }
+    .my-b {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ol {
+        padding: 2% 8%;
+    }
+    .font-text {
+        padding: 2% 4%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .li {
+        width: 8.5%;
+    }
+    .bar-tel {
+        margin-top: 3rem;
+        width: 80%;
+    }
+    .span-rotate {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .li {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .second {
+        font-size: 1.3rem;
+    }
+    .ol span {
+        font-size: 1.5rem;
+        margin-top: 2%;
+    }
+    .ol {
+        list-style: none;
+        padding: 3%;
+        text-align: center;
+    }
+    .flexOl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    .font-text {
+        padding: 5% 4%;
+    }
+    /* .span-ol {
+        margin: 2% 3% 0 0;
+    } */
+    .firstP {
+        margin-bottom: 2%;
+    }
+    .span-rotate {
+        display: block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        white-space: nowrap;
+        margin-top: 1rem;
+    }
+    .li {
+        width: 8%;
+    }
+    .progress-vertical {
+        width: 25px;
+    }
+    .bar-tel {
+        margin-top: 4.4rem;
+    }
+    .flexUl {
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .afterGoing {
+        bottom: 5%;
+    }
+    @keyframes aftergoing {
+        0% {
+            bottom: 2%;
+        }
+        25% {
+            bottom: 1%;
+        }
+        50% {
+            bottom: 0%;
+        }
+        75% {
+            bottom: 1%;
+        }
+        100% {
+            bottom: 2%;
+        }
+    }
+    .padTopBot {
+        padding-bottom: 16rem;
+    }
+    .datasetOl li i {
+        font-size: 3rem;
+    }
+    .second {
+        line-height: 90%;
+    }
+    .flexOl {
+        margin: 3rem 0;
+    }
+    .li i {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 336px) {
+    .li {
+        width: 7%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .progress-vertical {
+        width: 14px;
+    }
+    .li {
+        width: 7%;
+    }
