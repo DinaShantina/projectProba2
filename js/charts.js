@@ -21,7 +21,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "grey",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -57,7 +57,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -94,7 +94,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -130,7 +130,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -166,7 +166,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -202,7 +202,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -238,7 +238,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -274,7 +274,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -310,7 +310,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -346,7 +346,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
@@ -382,7 +382,7 @@ $(function () {
 				],
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
-				// borderColor: "black",
+				borderColor: "black",
 			}]
 		},
 		options: {
