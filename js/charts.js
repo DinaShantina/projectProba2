@@ -3,12 +3,49 @@ $(function () {
 
 	//1
 	let myChart1 = document.querySelector("#myChart1").getContext('2d');
-	document.querySelector('#myChart1').height = 300;
+	if($(window).width() > 1000){
+		document.querySelector('#myChart1').height = 400;
+		document.querySelector('#myChart2').height = 400;
+		document.querySelector('#myChart3').height = 400;
+		document.querySelector('#myChart4').height = 400;
+		document.querySelector('#myChart5').height = 400;
+		document.querySelector('#myChart6').height = 400;
+		document.querySelector('#myChart7').height = 400;
+		document.querySelector('#myChart8').height = 400;
+		document.querySelector('#myChart9').height = 400;
+		document.querySelector('#myChart10').height = 400;
+		document.querySelector('#myChart11').height = 400;
+	}else if($(window).width() < 1000){
+		document.querySelector('#myChart1').height = 150;
+		document.querySelector('#myChart2').height = 150;
+		document.querySelector('#myChart3').height = 150;
+		document.querySelector('#myChart4').height = 150;
+		document.querySelector('#myChart5').height = 150;
+		document.querySelector('#myChart6').height = 150;
+		document.querySelector('#myChart7').height = 150;
+		document.querySelector('#myChart8').height = 150;
+		document.querySelector('#myChart9').height = 150;
+		document.querySelector('#myChart10').height = 150;
+		document.querySelector('#myChart11').height = 150;
+	}else if($(window).width() < 500){
+		document.querySelector('#myChart1').height = 100;
+		document.querySelector('#myChart2').height = 100;
+		document.querySelector('#myChart3').height = 100;
+		document.querySelector('#myChart4').height = 100;
+		document.querySelector('#myChart5').height = 100;
+		document.querySelector('#myChart6').height = 100;
+		document.querySelector('#myChart7').height = 100;
+		document.querySelector('#myChart8').height = 100;
+		document.querySelector('#myChart9').height = 100;
+		document.querySelector('#myChart10').height = 100;
+		document.querySelector('#myChart11').height = 100;
+	}
 	document.querySelector('#myChart1').width = window.innerWidth;
 
 	let chart = new Chart(myChart1, {
 		type: 'line',
 		data: {
+
 			labels: ['Under 1 year', '1-4 years', '4-7 years', '7-10 years', '10+ years'],
 			datasets: [{
 				label: '',
@@ -22,6 +59,7 @@ $(function () {
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
 				borderColor: "black",
+				fontSize:'5'
 			}]
 		},
 		options: {
@@ -39,7 +77,7 @@ $(function () {
 	});
 	//2
 	let myChart2 = document.querySelector("#myChart2").getContext('2d');
-	document.querySelector('#myChart2').height = 300;
+	
 	document.querySelector('#myChart2').width = window.innerWidth;
 
 	let chart2 = new Chart(myChart2, {
@@ -76,7 +114,7 @@ $(function () {
 	});
 	//3
 	let myChart3 = document.querySelector("#myChart3").getContext('2d');
-	document.querySelector('#myChart3').height = 300;
+	
 	document.querySelector('#myChart3').width = window.innerWidth;
 
 	let chart3 = new Chart(myChart3, {
@@ -112,7 +150,7 @@ $(function () {
 	});
 	//4
 	let myChart4 = document.querySelector("#myChart4").getContext('2d');
-	document.querySelector('#myChart4').height = 300;
+	
 	document.querySelector('#myChart4').width = window.innerWidth;
 
 	let chart4 = new Chart(myChart4, {
@@ -148,7 +186,6 @@ $(function () {
 	});
 	//5
 	let myChart5 = document.querySelector("#myChart5").getContext('2d');
-	document.querySelector('#myChart5').height = 300;
 	document.querySelector('#myChart5').width = window.innerWidth;
 
 	let chart5 = new Chart(myChart5, {
@@ -184,7 +221,6 @@ $(function () {
 	});
 	//6
 	let myChart6 = document.querySelector("#myChart6").getContext('2d');
-	document.querySelector('#myChart6').height = 300;
 	document.querySelector('#myChart6').width = window.innerWidth;
 
 	let chart6 = new Chart(myChart6, {
@@ -220,7 +256,6 @@ $(function () {
 	});
 	//7
 	let myChart7 = document.querySelector("#myChart7").getContext('2d');
-	document.querySelector('#myChart7').height = 300;
 	document.querySelector('#myChart7').width = window.innerWidth;
 
 	let chart7 = new Chart(myChart7, {
@@ -256,7 +291,6 @@ $(function () {
 	});
 	//8
 	let myChart8 = document.querySelector("#myChart8").getContext('2d');
-	document.querySelector('#myChart8').height = 300;
 	document.querySelector('#myChart8').width = window.innerWidth;
 
 	let chart8 = new Chart(myChart8, {
@@ -292,7 +326,6 @@ $(function () {
 	});
 	//9
 	let myChart9 = document.querySelector("#myChart9").getContext('2d');
-	document.querySelector('#myChart9').height = 300;
 	document.querySelector('#myChart9').width = window.innerWidth;
 
 	let chart9 = new Chart(myChart9, {
@@ -328,7 +361,6 @@ $(function () {
 	});
 	//10
 	let myChart10 = document.querySelector("#myChart10").getContext('2d');
-	document.querySelector('#myChart10').height = 300;
 	document.querySelector('#myChart10').width = window.innerWidth;
 
 	let chart10 = new Chart(myChart10, {
@@ -364,7 +396,6 @@ $(function () {
 	});
 	//11
 	let myChart11 = document.querySelector("#myChart11").getContext('2d');
-	document.querySelector('#myChart11').height = 300;
 	document.querySelector('#myChart11').width = window.innerWidth;
 
 	let chart11 = new Chart(myChart11, {

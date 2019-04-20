@@ -4,6 +4,9 @@ body {
 	height: 100vh;
 	position: relative;
 	font-family: FontMedium;
+	background-image: url('../img/Form-bg.svg');
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 @font-face {
@@ -18,8 +21,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../img/Form-bg.svg');
-	background-size: cover;
 }
 
 form {

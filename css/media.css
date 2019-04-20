@@ -1,5 +1,142 @@
-@media screen and (max-width: 2560px) {}
-
+@media screen and (max-width: 2560px) {
+    .circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+    }
+    .circle i{
+        font-size: 10rem;
+    }
+    .firstPadTop{
+        padding-top: 20rem;
+    }
+    .firstRow h1{
+        font-size: 75px;
+    }
+    .firstRow h2{
+        font-size: 55px;
+    }
+    .firstRow h4{
+        font-size: 35px;
+    }
+    .firstRow ul li {
+        font-size: 20px;
+    }
+    .afterGoing p{
+        font-size: 2.5rem;
+    }
+    .afterGoing i{
+        font-size: 3rem;
+    }
+    .respond{
+        font-size: 2.5rem;
+    }
+    .iconWrapper{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+    }
+    .iconWrapper i{
+        font-size: 9rem;
+    }
+    .prefaceH2{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .prefaceText p{
+        font-size: 25px;
+    }
+    .prefaceText p:nth-child(8){
+         margin-bottom: 5rem;
+    }
+    .fourthRow p{
+        font-size: 30px;
+    }
+    .positionRelativeRow p {
+        font-size: 30px;
+    }
+    .bar2{
+        width: 20rem;
+    }
+    .flex .progress-vertical2{
+        width: 20rem;
+    }
+    .bar2 > span {
+        font-size: 20px;
+    }
+    ul span{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1920px){
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+    .circle i{
+        font-size: 3rem;
+    }
+    .firstPadTop{
+        padding-top: 15rem;
+    }
+    .firstRow h1{
+        font-size: 36px;
+    }
+    .firstRow h2{
+        font-size: 30px;
+    }
+    .firstRow h4{
+        font-size: 18px;
+    }
+    .firstRow ul li {
+        font-size: 15px;
+    }
+    .afterGoing p{
+        font-size: 1.7rem;
+    }
+    .afterGoing i{
+        font-size: 2.1rem;
+    }
+    .respond{
+        font-size: 1.5rem;
+    }
+    .iconWrapper{
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+    }
+    .iconWrapper i{
+        font-size: 3rem;
+    }
+    .prefaceH2{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .prefaceText p{
+        font-size: 18px;
+    }
+    .prefaceText p:nth-child(8){
+         margin-bottom: 2rem;
+    }
+    .fourthRow p{
+        font-size: 16px;
+    }
+    .positionRelativeRow p {
+        font-size: 16px;
+    }
+    .bar2{
+        width: 12rem;
+    }
+    .flex .progress-vertical2{
+        width: 12rem;
+    }
+    .bar2 > span {
+        font-size: 10px;
+    }
+    ul span{
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 1134px) {
@@ -13,6 +150,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .respond{
+        width: 20%;
+    }
     .thirdRow p {
         font-size: 15px;
     }
@@ -31,9 +171,29 @@
     .my-b {
         margin-bottom: 2rem;
     }
+    .bar2{
+        width: 11rem;
+    }
+     .flex .progress-vertical2{
+        width: 11rem;
+    }
 }
-
+@media screen and (max-width: 795px){
+    .bar2{
+        width: 11rem;
+    }
+    .flex .progress-vertical2{
+        width: 11rem;
+    }
+}
 @media screen and (max-width: 768px) {
+    .header h4{
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .ol {
         padding: 2% 8%;
     }
@@ -41,7 +201,14 @@
         padding: 2% 4%;
     }
 }
-
+@media screen and (max-width: 698px){
+    .bar2{
+        width: 10rem;
+    }
+    .flex .progress-vertical2{
+        width: 10rem;
+    }
+}
 @media screen and (max-width: 678px) {
     .li {
         width: 8.5%;
@@ -55,14 +222,46 @@
         font-size: 1rem;
     }
 }
-
+@media screen and (max-width: 593px){
+    .bar2{
+        width: 9rem;
+    }
+    .flex .progress-vertical2{
+        width: 9rem;
+    }
+}
 @media screen and (max-width: 580px) {
+    .respond{
+        width: 25%;
+    }
     .li {
         width: 8%;
     }
 }
+@media screen and (max-width: 558px){
+    .bar2{
+        width: 8rem;
+    }
+    .flex .progress-vertical2{
+        width: 8rem;
+    }
+}
+@media screen and (max-width: 494px){
+    .bar2{
+        width: 6.5rem;
+    }
+    .flex .progress-vertical2{
+        width: 6.5rem;
+    }
+}
 
 @media screen and (max-width: 426px) {
+    .firstPadTop{
+        padding-top: 7rem;
+    }
+    .respond{
+        width: 35%;
+    }
     .second {
         font-size: 1.3rem;
     }
@@ -150,20 +349,92 @@
     .li i {
         font-size: 1.5rem;
     }
-}
+    .bar2 > span {
+        -webkit-transform: rotate(90deg);
+        bottom: 10px;
+    }
+    .flex .progress-vertical2{
+        margin-top: 35px;
+    }
 
-@media screen and (max-width: 375px) {}
-
-@media screen and (max-width: 336px) {
-    .li {
-        width: 7%;
+    .firstPadTop{
+        padding-top: 7rem;
+    }
+    .respond{
+        width: 35%;
+    }
+    ul span{
+        -webkit-transform: rotate(90deg);
+    }
+    .padbot{
+        padding-bottom: 3rem;
+    }
+    .afterGoingSlower{
+        bottom: 0;
+    }
+    @keyframes afterGoingSlower {
+    0% {
+        bottom: 0%;
+    }
+    25% {
+        bottom: 1%;
+    }
+    50% {
+        bottom: 1.5%;
+    }
+    75% {
+        bottom: 1%;
+    }
+    100% {
+        bottom: 0%;
+        }
+    }
+    .ul2 li{
+        padding: 0;
     }
 }
 
+@media screen and (max-width: 376px){
+    .background-first{
+        height: 105vh;
+    }
+    .bar2{
+        width: 6rem;
+    }
+    .flex .progress-vertical2{
+        width: 6rem;
+    }
+}
+@media screen and (max-width: 351px){
+    .bar2{
+        width: 5.5rem;
+    }
+    .flex .progress-vertical2{
+        width: 5.5rem;
+    }
+}
+@media screen and (max-width: 331px){
+    .bar2{
+        width: 5rem;
+    }
+    .flex .progress-vertical2{
+        width: 5rem;
+    }
+}
 @media screen and (max-width: 320px) {
+    .background-first{
+        height: 108vh;
+    }
     .progress-vertical {
         width: 14px;
     }
     .li {
         width: 7%;
     }
+    .bar2{
+        width: 4rem;
+    }
+    .flex .progress-vertical2{
+        width: 4rem;
+    }
+}
