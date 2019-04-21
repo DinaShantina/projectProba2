@@ -67,6 +67,41 @@
     ul span{
         font-size: 2rem;
     }
+    .sixthRow .relevance{
+        font-size: 60px;
+        margin-bottom: 5rem;
+    }
+    .sixthRow p{
+        font-size: 25px;
+    }
+    .leftOverMap h5{
+        font-size: 150%;
+    }
+    .leftOverMap ul li {
+        font-size: 25px;
+    }
+    .leftOverMap li:before{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .overMap{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4{
+            font-size: 200%;
+    }
+    .rightOverMap h5{
+        font-size: 150%;
+    }
+    .rightOverMap .rankAndValue span{
+        font-size: 25px;
+    }
+    .divmap{
+        transform: scale(1.5);
+        margin-bottom: 10rem;
+    }
 }
 @media screen and (max-width: 1920px){
     .circle{
@@ -136,6 +171,41 @@
     ul span{
         font-size: 1.2rem;
     }
+    .sixthRow .relevance{
+        font-size: 30px;
+        margin-bottom: 5rem;
+    }
+    .sixthRow p{
+        font-size: 16px;
+    }
+    .leftOverMap h5{
+        font-size: 100%;
+    }
+    .leftOverMap ul li {
+        font-size: 13px;
+    }
+    .leftOverMap li:before{
+        width: 10px;
+        height: 10px;
+        margin-right: 7.5px;
+    }
+    .overMap{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4{
+            font-size: 100%;
+    }
+    .rightOverMap h5{
+        font-size: 100%;
+    }
+    .rightOverMap .rankAndValue span{
+        font-size: 14px;
+    }
+    .divmap{
+        transform: scale(1);
+        margin-bottom: 5rem;
+    }
 }
 @media screen and (max-width: 1440px) {}
 
@@ -148,7 +218,15 @@
         white-space: nowrap;
     }
 }
-
+@media screen and (max-width: 1087px){
+    .overMap{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .rightOverMap .rankAndValue span{
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .respond{
         width: 20%;
@@ -178,6 +256,12 @@
         width: 11rem;
     }
 }
+@media screen and (max-width: 1000px){
+    .overMap{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 @media screen and (max-width: 795px){
     .bar2{
         width: 11rem;
@@ -200,6 +284,15 @@
     .font-text {
         padding: 2% 4%;
     }
+    .divmap{
+        margin-top: 2rem;
+    }
+    .rightOverMap .rankAndValue span {
+            font-size: 17px;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 0.7rem;
+        }
 }
 @media screen and (max-width: 698px){
     .bar2{
@@ -391,6 +484,9 @@
     }
     .ul2 li{
         padding: 0;
+    }
+    .divmap{
+        margin-top: 0rem;
     }
 }
 
