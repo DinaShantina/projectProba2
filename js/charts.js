@@ -3,19 +3,19 @@ $(function () {
 
 	//1
 	let myChart1 = document.querySelector("#myChart1").getContext('2d');
-	if($(window).width() > 1000){
-		document.querySelector('#myChart1').height = 400;
-		document.querySelector('#myChart2').height = 400;
-		document.querySelector('#myChart3').height = 400;
-		document.querySelector('#myChart4').height = 400;
-		document.querySelector('#myChart5').height = 400;
-		document.querySelector('#myChart6').height = 400;
-		document.querySelector('#myChart7').height = 400;
-		document.querySelector('#myChart8').height = 400;
-		document.querySelector('#myChart9').height = 400;
-		document.querySelector('#myChart10').height = 400;
-		document.querySelector('#myChart11').height = 400;
-	}else if($(window).width() < 1000){
+	if ($(window).width() > 1000) {
+		document.querySelector('#myChart1').height = 350;
+		document.querySelector('#myChart2').height = 350;
+		document.querySelector('#myChart3').height = 350;
+		document.querySelector('#myChart4').height = 350;
+		document.querySelector('#myChart5').height = 350;
+		document.querySelector('#myChart6').height = 350;
+		document.querySelector('#myChart7').height = 350;
+		document.querySelector('#myChart8').height = 350;
+		document.querySelector('#myChart9').height = 350;
+		document.querySelector('#myChart10').height = 350;
+		document.querySelector('#myChart11').height = 350;
+	} else if ($(window).width() < 993) {
 		document.querySelector('#myChart1').height = 150;
 		document.querySelector('#myChart2').height = 150;
 		document.querySelector('#myChart3').height = 150;
@@ -27,7 +27,7 @@ $(function () {
 		document.querySelector('#myChart9').height = 150;
 		document.querySelector('#myChart10').height = 150;
 		document.querySelector('#myChart11').height = 150;
-	}else if($(window).width() < 500){
+	} else if ($(window).width() < 500) {
 		document.querySelector('#myChart1').height = 100;
 		document.querySelector('#myChart2').height = 100;
 		document.querySelector('#myChart3').height = 100;
@@ -59,7 +59,7 @@ $(function () {
 				backgroundColor: '#6630D8',
 				borderWidth: 1,
 				borderColor: "black",
-				fontSize:'5'
+				fontSize: '5'
 			}]
 		},
 		options: {
@@ -77,7 +77,7 @@ $(function () {
 	});
 	//2
 	let myChart2 = document.querySelector("#myChart2").getContext('2d');
-	
+
 	document.querySelector('#myChart2').width = window.innerWidth;
 
 	let chart2 = new Chart(myChart2, {
@@ -114,7 +114,7 @@ $(function () {
 	});
 	//3
 	let myChart3 = document.querySelector("#myChart3").getContext('2d');
-	
+
 	document.querySelector('#myChart3').width = window.innerWidth;
 
 	let chart3 = new Chart(myChart3, {
@@ -150,7 +150,7 @@ $(function () {
 	});
 	//4
 	let myChart4 = document.querySelector("#myChart4").getContext('2d');
-	
+
 	document.querySelector('#myChart4').width = window.innerWidth;
 
 	let chart4 = new Chart(myChart4, {
@@ -430,8 +430,18 @@ $(function () {
 		}
 	});
 	//doughnut CHART
+	if ($(window).width() > 2559) {
+		document.getElementById('myChartD').height = 500;
+	} else if ($(window).width() < 1921) {
+		document.getElementById('myChartD').height = 300;
+	} else if ($(window).width() < 1000) {
+		document.getElementById('myChartD').height = 170;
+	} else if ($(window).width() < 549) {
+		document.getElementById('myChartD').height = 70;
+	}
+
 	let myChartD = document.querySelector("#myChartD").getContext('2d');
-	document.getElementById('myChartD').height = 300;
+
 	document.getElementById('myChartD').width = window.innerWidth;
 
 	let chartD = new Chart(myChartD, {

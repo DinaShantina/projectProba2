@@ -46,7 +46,9 @@ body {
 .text-bold {
     font-family: FontBold;
 }
-
+.text-mediun{
+    font-family: FontMedium;
+}
 .text-grey {
     color: rgba(7, 25, 35, 0.5);
 }
@@ -88,7 +90,7 @@ body {
 /* -------------- */
 
 .firstPadTop {
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .header h2 {
@@ -133,7 +135,7 @@ body {
 
 .header ul li {
     background-color: transparent;
-    padding: 1rem 1rem;
+    padding: 0.8rem 1rem;
     margin: 0;
     border-radius: 3px;
     border: 1px solid rgb(201, 198, 198);
@@ -217,13 +219,12 @@ body {
 
 .padTopBot {
     padding-top: 5rem;
-    padding-bottom: 12rem;
+    padding-bottom: 14rem;
 }
 
 .prefaceH2 {
-    font-weight: 100;
     color: black;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     color: white;
 }
 
@@ -416,6 +417,8 @@ ul span {
 
 .chartRow {
     padding-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .chartRow i {
@@ -567,7 +570,7 @@ ul span {
 .afterGoing {
     animation: 1.5s aftergoing linear infinite;
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     color: #6630d8;
@@ -584,19 +587,19 @@ ul span {
 
 @keyframes aftergoing {
     0% {
-        bottom: 2%;
+        bottom: 3%;
     }
     25% {
-        bottom: 3%;
-    }
-    50% {
         bottom: 4%;
     }
+    50% {
+        bottom: 5%;
+    }
     75% {
-        bottom: 3%;
+        bottom: 4%;
     }
     100% {
-        bottom: 2%;
+        bottom: 3%;
     }
 }
 
@@ -815,7 +818,8 @@ ul span {
 }
 
 .flags-size {
-    background-color: rgb(197, 197, 197);
+    /* background-color: rgb(197, 197, 197); */
+    background-color: #7738ff;
     padding: 5% 3%;
 }
 
@@ -836,20 +840,29 @@ ul span {
 .flags-i {
     margin-bottom: 4%;
 }
-
+.list-group-item{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}
 .wtf {
     position: absolute;
     display: inline-block;
     top: 50%;
     transform: translateY(-50%);
+    color: black;
 }
-
-.grey-list {
+.seventhRow{
+    background-image: url('../img/Backgrounds grey-02.svg');
+    background-position: center;
+    background-size: cover;
+}
+/* .grey-list {
     background-color: rgba(216, 213, 213, 0.5);
-}
+} */
 
 .grey-list2 {
-    background-color: rgba(236, 233, 233, 0.5);
+    background-color: transparent;
+    
 }
 
 .high, .low {
@@ -864,8 +877,8 @@ ul span {
     cursor: pointer;
 }
 
-.low:hover {
-    background-color: rgb(74, 151, 185);
+.low:hover, .high:hover {
+    background-color: #7738ff;
 }
 
 .high {
@@ -912,4 +925,47 @@ ul span {
 #Croatia {
     position: relative;
     z-index: 9999;
+}
+
+.buttonsOverMap{
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: 10px;
+   margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
+}
+.buttonsOverMap li {
+    display: block;
+    float: left;
+    padding: 10px 0;
+    font-weight: 100;
+    font-size: 10px;
+    position: relative;
+    width: 9.090909090909092%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    overflow: visible;
+    transition: background-color .5s;
+    background-color: #333;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    color: white;
+}
+.buttonsOverMap li label, .buttonsOverMap li {
+     cursor: pointer;
+}
+.buttonsOverMap li i {
+    display: block;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.buttonsOverMap li:hover{
+    background-color: #6630D8;
+}
+.buttonsOverMap .newColor{
+    background-color: #6630D8;
 }

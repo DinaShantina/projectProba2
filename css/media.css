@@ -1,213 +1,263 @@
 @media screen and (max-width: 2560px) {
-    .circle{
+    .circle {
         width: 150px;
         height: 150px;
         border-radius: 100px;
     }
-    .circle i{
+    .circle i {
         font-size: 10rem;
     }
-    .firstPadTop{
+    .firstPadTop {
         padding-top: 20rem;
     }
-    .firstRow h1{
+    .firstRow h1 {
         font-size: 75px;
     }
-    .firstRow h2{
+    .firstRow h2 {
         font-size: 55px;
     }
-    .firstRow h4{
+    .firstRow h4 {
         font-size: 35px;
     }
     .firstRow ul li {
         font-size: 20px;
     }
-    .afterGoing p{
+    .afterGoing p {
         font-size: 2.5rem;
     }
-    .afterGoing i{
+    .afterGoing i {
         font-size: 3rem;
     }
-    .respond{
+    .respond {
         font-size: 2.5rem;
     }
-    .iconWrapper{
+    .iconWrapper {
         width: 150px;
         height: 150px;
         border-radius: 100px;
     }
-    .iconWrapper i{
+    .iconWrapper i {
         font-size: 9rem;
     }
-    .prefaceH2{
+    .prefaceH2 {
         font-size: 50px;
         font-weight: 900;
     }
-    .prefaceText p{
+    .prefaceText p {
         font-size: 25px;
     }
-    .prefaceText p:nth-child(8){
-         margin-bottom: 5rem;
+    .prefaceText p:nth-child(8) {
+        margin-bottom: 5rem;
     }
-    .fourthRow p{
+    .fourthRow p {
         font-size: 30px;
     }
     .positionRelativeRow p {
         font-size: 30px;
     }
-    .bar2{
+    .bar2 {
         width: 20rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 20rem;
     }
-    .bar2 > span {
+    .bar2>span {
         font-size: 20px;
     }
-    ul span{
+    ul span {
         font-size: 2rem;
     }
-    .sixthRow .relevance{
+    .sixthRow .relevance {
         font-size: 60px;
         margin-bottom: 5rem;
     }
-    .sixthRow p{
+    .sixthRow p {
         font-size: 25px;
     }
-    .leftOverMap h5{
+    .leftOverMap h5 {
         font-size: 150%;
     }
     .leftOverMap ul li {
         font-size: 25px;
     }
-    .leftOverMap li:before{
+    .leftOverMap li:before {
         width: 20px;
         height: 20px;
         margin-right: 10px;
     }
-    .overMap{
+    .overMap {
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
-    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4{
-            font-size: 200%;
+    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4 {
+        font-size: 200%;
     }
-    .rightOverMap h5{
+    .rightOverMap h5 {
         font-size: 150%;
     }
-    .rightOverMap .rankAndValue span{
+    .rightOverMap .rankAndValue span {
         font-size: 25px;
     }
-    .divmap{
+    .divmap {
         transform: scale(1.5);
         margin-bottom: 10rem;
     }
+    .bg-gender h2 {
+        font-size: 5rem;
+    }
+    .barSmall {
+        width: 3.5rem;
+    }
+    .text-white {
+        font-size: 20px;
+    }
+    .ul i {
+        font-size: 5.2rem;
+    }
 }
-@media screen and (max-width: 1920px){
-    .circle{
+
+@media screen and (max-width: 1920px) {
+    .circle {
         width: 80px;
         height: 80px;
     }
-    .circle i{
-        font-size: 3rem;
+    .circle i {
+        font-size: 4.5rem;
     }
-    .firstPadTop{
-        padding-top: 15rem;
+    .firstPadTop {
+        padding-top: 12rem;
     }
-    .firstRow h1{
+    .firstRow h1 {
         font-size: 36px;
     }
-    .firstRow h2{
+    .firstRow h2 {
         font-size: 30px;
     }
-    .firstRow h4{
+    .firstRow h4 {
         font-size: 18px;
     }
     .firstRow ul li {
         font-size: 15px;
     }
-    .afterGoing p{
+    .afterGoing p {
         font-size: 1.7rem;
     }
-    .afterGoing i{
+    .afterGoing i {
         font-size: 2.1rem;
     }
-    .respond{
+    .respond {
         font-size: 1.5rem;
     }
-    .iconWrapper{
+    .iconWrapper {
         width: 80px;
         height: 80px;
         border-radius: 50px;
     }
-    .iconWrapper i{
+    .iconWrapper i {
         font-size: 3rem;
     }
-    .prefaceH2{
+    .prefaceH2 {
         font-size: 30px;
         font-weight: 900;
     }
-    .prefaceText p{
+    .prefaceText p {
         font-size: 18px;
     }
-    .prefaceText p:nth-child(8){
-         margin-bottom: 2rem;
+    .prefaceText p:nth-child(8) {
+        margin-bottom: 2rem;
     }
-    .fourthRow p{
+    .fourthRow p {
         font-size: 16px;
     }
     .positionRelativeRow p {
         font-size: 16px;
     }
-    .bar2{
+    .bar2 {
         width: 12rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 12rem;
     }
-    .bar2 > span {
+    .bar2>span {
         font-size: 10px;
     }
-    ul span{
+    ul span {
         font-size: 1.2rem;
     }
-    .sixthRow .relevance{
+    .sixthRow .relevance {
         font-size: 30px;
         margin-bottom: 5rem;
     }
-    .sixthRow p{
+    .sixthRow p {
         font-size: 16px;
     }
-    .leftOverMap h5{
+    .leftOverMap h5 {
         font-size: 100%;
     }
     .leftOverMap ul li {
         font-size: 13px;
     }
-    .leftOverMap li:before{
+    .leftOverMap li:before {
         width: 10px;
         height: 10px;
         margin-right: 7.5px;
     }
-    .overMap{
+    .overMap {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
     }
-    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4{
-            font-size: 100%;
-    }
-    .rightOverMap h5{
+    .overMap div:nth-child(2) h5, .overMap div:nth-child(2) h4 {
         font-size: 100%;
     }
-    .rightOverMap .rankAndValue span{
+    .rightOverMap h5 {
+        font-size: 100%;
+    }
+    .rightOverMap .rankAndValue span {
         font-size: 14px;
     }
-    .divmap{
+    .divmap {
         transform: scale(1);
         margin-bottom: 5rem;
     }
+    /* GENDER */
+    .bg-gender h2 {
+        font-size: 30px;
+    }
+    .barSmall {
+        width: 1.7rem;
+    }
+    .text-white {
+        font-size: 10px;
+    }
+    .ul i {
+        font-size: 2.2rem;
+    }
 }
-@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1225px) {
+    .barSmall {
+        width: 1.5rem;
+    }
+    form{
+        width: 60%;
+    }
+
+    .buttonsOverMap div i,.buttonsOverMap div span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .barSmall {
+        width: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .barSmall {
+        width: 1.3rem;
+    }
+}
 
 @media screen and (max-width: 1134px) {
     .bar-tel {
@@ -218,17 +268,46 @@
         white-space: nowrap;
     }
 }
-@media screen and (max-width: 1087px){
-    .overMap{
+
+@media screen and (max-width: 1117px) {
+    .barSmall {
+        width: 1.5rem;
+        font-size: 1rem;
+    }
+    .ul span {
+        font-size: 0.9rem;
+    }
+    .barSmall {
+        width: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+   .overMap{
         padding-left: 0;
         padding-right: 0;
     }
-    .rightOverMap .rankAndValue span{
-        font-size: 10px;
+    .rankAndValue .byRanking ,.rankAndValue .byValue {
+            font-size: 12px;
+        }
+    .barSmall {
+        width: 1.2rem;
+        font-size: 1.2rem;
+    }
+    .ul span {
+        font-size: 0.8rem;
     }
 }
+@media screen and (max-width: 1040px){
+    .rightOverMap .rankAndValue span {
+            font-size: 10px;
+            margin-right: 3px;
+            margin-left: 3px;
+            padding: 0.5rem;
+        }
+}
 @media screen and (max-width: 1024px) {
-    .respond{
+    .respond {
         width: 20%;
     }
     .thirdRow p {
@@ -249,59 +328,148 @@
     .my-b {
         margin-bottom: 2rem;
     }
-    .bar2{
+    .bar2 {
         width: 11rem;
     }
-     .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 11rem;
+    }
+    .barSmall {
+        width: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .ul span {
+        font-size: 0.9rem;
+    }
+    .positionRelativeRow p {
+        font-size: 1.4rem;
+    }
+    form{
+            width: 70%;
+        }
+
+        .rightOverMap .rankAndValue span {
+            font-size: 11px;
+            margin-right: 3px;
+            margin-left: 3px;
+            padding: 0.7rem;
+        }
+}
+@media screen and (max-width: 1005px){
+    .rightOverMap .rankAndValue span{
+        padding: 0.5rem;
     }
 }
-@media screen and (max-width: 1000px){
-    .overMap{
+@media screen and (max-width: 1000px) {
+    .overMap {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
-@media screen and (max-width: 795px){
-    .bar2{
+
+@media screen and (max-width: 795px) {
+    .bar2 {
         width: 11rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 11rem;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .header h4{
+    .header h4 {
         display: block;
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
-
     .ol {
         padding: 2% 8%;
     }
     .font-text {
         padding: 2% 4%;
     }
-    .divmap{
+    .divmap {
         margin-top: 2rem;
     }
     .rightOverMap .rankAndValue span {
-            font-size: 17px;
-            margin-right: 5px;
-            margin-left: 5px;
+        font-size: 17px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 0.7rem;
+    }
+    form{
+        width: 80%;
+    }
+    .mainDivChoices label{
+        padding: 15px 15px;
+    }
+    .questionHeader:before{
+        left: -45px;
+    }
+    .q10:before{
+        left: -55px;
+    }
+    .q11:before{
+        left: -50px;
+    }
+    .q12:before{
+        left: -55px;
+        top: 6%;
+    }
+    .q13:before{
+        left: -55px;
+    }
+    .q14:before{
+        left: -55px;
+    }
+    .q15:before{
+        left: -55px;
+    }
+    .divmap{
+        margin-top: 2rem;
+    }
+    .LabelsRadios label{
+        height: auto;
+        padding: 7px 7px;
+        width: 30%;
+    }
+    .rightOverMap .rankAndValue span {
+            font-size: 12px;
+            margin-right: 3px;
+            margin-left: 3px;
             padding: 0.7rem;
-        }
-}
-@media screen and (max-width: 698px){
-    .bar2{
-        width: 10rem;
     }
-    .flex .progress-vertical2{
-        width: 10rem;
+    .input12 {
+        width: 70%;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .bar2 {
+        width: 10rem;
+    }
+    .flex .progress-vertical2 {
+        width: 10rem;
+    }
+    .buttonsOverMap li {
+        padding-bottom: 75px;
+    }
+    .buttonsOverMap li i{
+        margin-bottom: 10px;
+    }
+    .buttonsOverMap li label{
+        -webkit-transform: rotate(90deg);
+        width: 60px;
+        transform-origin: left top;
+        position: absolute;
+        left: 60%;
+        top: 45%;
+        white-space: nowrap;
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 678px) {
     .li {
         width: 8.5%;
@@ -315,44 +483,177 @@
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 593px){
-    .bar2{
-        width: 9rem;
+
+@media screen and (max-width:669px) {
+    .barSmall {
+        width: 1.4rem;
     }
-    .flex .progress-vertical2{
-        width: 9rem;
+    .flex2 div div .text-white {
+        font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width:638px) {
+    .barSmall {
+        width: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .flex2 div div .text-white {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 593px) {
+    .bar2 {
+        width: 9rem;
+    }
+    .flex .progress-vertical2 {
+        width: 9rem;
+    }
+    form{
+        width: 90%;
+    }
+    .mainDivChoices label{
+        padding: 10px 12px;
+        margin-right: 5px;
+    }
+    form{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .barSmall {
+        width: 1.1rem;
+    }
+}
+
 @media screen and (max-width: 580px) {
-    .respond{
+    .respond {
         width: 25%;
     }
     .li {
         width: 8%;
     }
 }
-@media screen and (max-width: 558px){
-    .bar2{
+
+@media screen and (max-width: 558px) {
+    .bar2 {
         width: 8rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 8rem;
     }
+    .span-rotate {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    .que{
+            padding: 0; 
+        }
+        .mainDivChoices label{
+            padding: 10px 5px;
+        }
 }
-@media screen and (max-width: 494px){
-    .bar2{
-        width: 6.5rem;
+
+@media screen and (max-width: 562px) {
+    .barSmall {
+        width: 1rem;
     }
-    .flex .progress-vertical2{
-        width: 6.5rem;
+    .flex2 div div .text-white {
+        font-size: 0.6rem;
+    }
+    .positionRelativeRow p {
+        font-size: 1rem;
+    }
+    .bg-gender h2 {
+        font-size: 25px;
     }
 }
 
+@media screen and (max-width: 554px) {
+    .barSmall {
+        width: 0.9rem;
+    }
+    .flex2 div div .text-white {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .barSmall {
+        width: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ul span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .ul i {
+        font-size: 1.5rem;
+    }
+    .ul span {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    .bar2 {
+        width: 6.5rem;
+    }
+    .flex .progress-vertical2 {
+        width: 6.5rem;
+    }
+    .mainDivChoices label{
+        padding: 10px 10px;
+    }
+    .LabelsRadios label{
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .barSmall {
+        width: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .flex2 div div .text-white {
+        font-size: 0.4rem;
+    }
+    .barSmall {
+        width: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .ul span {
+        font-size: 0.5rem;
+    }
+    .flex2 div div .text-white {
+        font-size: 0.4rem;
+    }
+    .ul .li {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 440px){
+    .mainDivChoices label{
+        padding: 7px 7px;
+    }
+}
 @media screen and (max-width: 426px) {
-    .firstPadTop{
+    .firstPadTop {
         padding-top: 7rem;
     }
-    .respond{
+    .respond {
         width: 35%;
     }
     .second {
@@ -442,83 +743,115 @@
     .li i {
         font-size: 1.5rem;
     }
-    .bar2 > span {
+    .bar2>span {
         -webkit-transform: rotate(90deg);
         bottom: 10px;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         margin-top: 35px;
     }
-
-    .firstPadTop{
+    .firstPadTop {
         padding-top: 7rem;
     }
-    .respond{
+    .respond {
         width: 35%;
     }
-    ul span{
+    ul span {
         -webkit-transform: rotate(90deg);
     }
-    .padbot{
+    .padbot {
         padding-bottom: 3rem;
     }
-    .afterGoingSlower{
+    .afterGoingSlower {
         bottom: 0;
     }
     @keyframes afterGoingSlower {
-    0% {
-        bottom: 0%;
-    }
-    25% {
-        bottom: 1%;
-    }
-    50% {
-        bottom: 1.5%;
-    }
-    75% {
-        bottom: 1%;
-    }
-    100% {
-        bottom: 0%;
+        0% {
+            bottom: 0%;
+        }
+        25% {
+            bottom: 1%;
+        }
+        50% {
+            bottom: 1.5%;
+        }
+        75% {
+            bottom: 1%;
+        }
+        100% {
+            bottom: 0%;
         }
     }
-    .ul2 li{
+    .ul2 li {
+        padding: 0;
+    }
+    .divmap {
+        margin-top: 0rem;
+    }
+    .barSmall {
+        width: 0.9rem;
+        margin-top: 0.8rem;
+        padding: 2%;
+    }
+    .flex span {
+        margin-top: 0.8rem;
+        font-size: 0.7rem;
+    }
+    .li-p {
         padding: 0;
     }
     .divmap{
         margin-top: 0rem;
     }
+    .buttonsOverMap li i{
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 376px){
-    .background-first{
+@media screen and (max-width: 388px) {
+    .barSmall {
+        width: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .background-first {
         height: 105vh;
     }
-    .bar2{
+    .bar2 {
         width: 6rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 6rem;
     }
 }
-@media screen and (max-width: 351px){
-    .bar2{
+
+@media screen and (max-width: 373px) {
+    /* .barSmall {
+        width: 0.1rem;
+    } */
+}
+
+@media screen and (max-width: 351px) {
+    .bar2 {
         width: 5.5rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 5.5rem;
     }
 }
-@media screen and (max-width: 331px){
-    .bar2{
+
+@media screen and (max-width: 331px) {
+    .bar2 {
         width: 5rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 5rem;
     }
 }
+
 @media screen and (max-width: 320px) {
-    .background-first{
+    .background-first {
         height: 108vh;
     }
     .progress-vertical {
@@ -527,10 +860,16 @@
     .li {
         width: 7%;
     }
-    .bar2{
+    .bar2 {
         width: 4rem;
     }
-    .flex .progress-vertical2{
+    .flex .progress-vertical2 {
         width: 4rem;
+    }
+    .barSmall {
+        width: 0.7rem;
+    }
+    .text-white {
+        bottom: 5px;
     }
 }
