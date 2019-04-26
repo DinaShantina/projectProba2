@@ -46,9 +46,11 @@ body {
 .text-bold {
     font-family: FontBold;
 }
-.text-mediun{
+
+.text-mediun {
     font-family: FontMedium;
 }
+
 .text-grey {
     color: rgba(7, 25, 35, 0.5);
 }
@@ -59,14 +61,11 @@ body {
 
 /* --------LIVING INFOGRAPHIC----- */
 
-
-
 .firstBgRgba {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
-
 
 /* ICON IN INFOGRAPHIC */
 
@@ -219,7 +218,7 @@ body {
 
 .padTopBot {
     padding-top: 5rem;
-    padding-bottom: 14rem;
+    padding-bottom: 15rem;
 }
 
 .prefaceH2 {
@@ -308,6 +307,11 @@ body {
 
 .firstP {
     margin-bottom: 9rem;
+}
+
+.padTopBotSpecial2 {
+    padding-top: 5rem;
+    padding-bottom: 13rem;
 }
 
 .font-text {
@@ -525,8 +529,6 @@ ul span {
     position: relative;
 }
 
-
-
 @keyframes going1 {
     0% {
         bottom: 7%;
@@ -570,7 +572,7 @@ ul span {
 .afterGoing {
     animation: 1.5s aftergoing linear infinite;
     position: absolute;
-    bottom: 3%;
+    bottom: 4.5%;
     left: 50%;
     transform: translateX(-50%);
     color: #6630d8;
@@ -587,19 +589,42 @@ ul span {
 
 @keyframes aftergoing {
     0% {
-        bottom: 3%;
+        bottom: 4.5%;
     }
     25% {
-        bottom: 4%;
+        bottom: 5.5%;
     }
     50% {
-        bottom: 5%;
+        bottom: 6.5%;
     }
     75% {
-        bottom: 4%;
+        bottom: 5.5%;
     }
     100% {
+        bottom: 4.5%;
+    }
+}
+
+.afterGoingD {
+    bottom: 1%;
+    animation: aftergoing2 1.5s linear infinite;
+}
+
+@keyframes aftergoing2 {
+    0% {
+        bottom: 1%;
+    }
+    25% {
+        bottom: 2%;
+    }
+    50% {
         bottom: 3%;
+    }
+    75% {
+        bottom: 2%;
+    }
+    100% {
+        bottom: 1%;
     }
 }
 
@@ -783,6 +808,11 @@ ul span {
     font-style: italic;
 }
 
+.padTopBotSpecial {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
 /* MAP */
 
 #vmap {
@@ -803,14 +833,21 @@ ul span {
 
 /* COUNTRIES BREAKDOWN------------ */
 
+.list-group-item {
+    display: list-item;
+    padding: 15px 0 0 10px;
+    margin: 9px 0 0 30px;
+}
+
+.list-group {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
 .flags-i i {
     font-size: 2.2rem;
     color: #6630D8;
     margin: 0 1%;
-}
-
-.ul-flags {
-    list-style: none;
 }
 
 .text-country {
@@ -818,9 +855,10 @@ ul span {
 }
 
 .flags-size {
-    /* background-color: rgb(197, 197, 197); */
-    background-color: #7738ff;
-    padding: 5% 3%;
+    background-color: #cfcfcf;
+    padding: 7% 3%;
+    margin-top: -11%;
+    margin-left: -10px;
 }
 
 .border-top {
@@ -832,37 +870,37 @@ ul span {
 }
 
 .no-pad {
-    padding: 0;
     position: relative;
-    /* margin-top: 2%; */
 }
 
 .flags-i {
     margin-bottom: 4%;
 }
-.list-group-item{
+
+.list-group-item {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
 }
+
 .wtf {
     position: absolute;
     display: inline-block;
     top: 50%;
+    padding-left: 5%;
     transform: translateY(-50%);
     color: black;
 }
-.seventhRow{
-    background-image: url('../img/Backgrounds grey-02.svg');
-    background-position: center;
-    background-size: cover;
+
+.seventhRow {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/Backgrounds grey-02.svg');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-/* .grey-list {
-    background-color: rgba(216, 213, 213, 0.5);
-} */
 
 .grey-list2 {
     background-color: transparent;
-    
 }
 
 .high, .low {
@@ -882,15 +920,16 @@ ul span {
 }
 
 .high {
-    background-color: #333;
+    background-color: #6630D8;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
 .low {
-    background-color: #6630D8;
+    background-color: black;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    color: grey;
 }
 
 .high-low {
@@ -927,15 +966,16 @@ ul span {
     z-index: 9999;
 }
 
-.buttonsOverMap{
-   text-align: center;
-   margin-bottom: 30px;
-   margin-top: 10px;
-   margin-left: 0;
+.buttonsOverMap {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 0;
     margin-right: 0;
     padding: 0;
     list-style: none;
 }
+
 .buttonsOverMap li {
     display: block;
     float: left;
@@ -951,21 +991,25 @@ ul span {
     overflow: visible;
     transition: background-color .5s;
     background-color: #333;
-    border-right: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
 }
+
 .buttonsOverMap li label, .buttonsOverMap li {
-     cursor: pointer;
+    cursor: pointer;
 }
+
 .buttonsOverMap li i {
     display: block;
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.buttonsOverMap li:hover{
+
+.buttonsOverMap li:hover {
     background-color: #6630D8;
 }
-.buttonsOverMap .newColor{
+
+.buttonsOverMap .newColor {
     background-color: #6630D8;
 }

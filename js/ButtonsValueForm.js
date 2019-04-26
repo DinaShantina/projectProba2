@@ -1,11 +1,11 @@
 $(function () {
 
 
-	$(".que").css({ display: 'none' });
+	// $(".que").css({ display: 'none' });
 	$('.que').eq(0).css({ display: 'block' });
 	$(".progressText").attr("disabled", true);
 
-	$(window).scrollTop(0);
+	// $(window).scrollTop(0);
 
 	$(".key").on('keyup', function (e) {
 		if (e.keycode === 13) {

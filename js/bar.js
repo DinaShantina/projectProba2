@@ -1,3 +1,5 @@
+
+
 let sallaryDataSet = $('.barSallary');
 let techDataSet = $('.barTech');
 let definitionDataSet = $('.barDefinition');
@@ -130,93 +132,213 @@ let flagSalMk = $('.flags-sal-mk');
 let flagSalCr = $('.flags-sal-cr');
 let flagSalBg = $('.flags-sal-bg');
 let flagSalRs = $('.flags-sal-rs');
+let salMk = $('.sal-mk');
+let salHr = $('.sal-hr');
+let salBg = $('.sal-bg');
+let salRs = $('.sal-rs');
 
 flagSalMk.css({ 'width': '55%' });
+salMk.attr("data-value", "55");
 flagSalCr.css({ 'width': '90%' });
+salHr.attr("data-value", "90");
 flagSalBg.css({ 'width': '60%' });
+salBg.attr("data-value", "60");
 flagSalRs.css({ 'width': '90%' });
+salRs.attr("data-value", "90");
 
 
 let flagTechMk = $('.flags-tech-mk');
 let flagTechCr = $('.flags-tech-cr');
 let flagTechBg = $('.flags-tech-bg');
 let flagTechRs = $('.flags-tech-rs');
+let techMk = $('.tech-mk');
+let techHr = $('.tech-hr');
+let techBg = $('.tech-bg');
+let techRs = $('.tech-rs');
 
 flagTechMk.css({ 'width': '50%' });
+techMk.attr("data-value", "50");
 flagTechCr.css({ 'width': '90%' });
+techHr.attr("data-value", "90");
 flagTechBg.css({ 'width': '80%' });
+techBg.attr("data-value", "80");
 flagTechRs.css({ 'width': '60%' });
+techRs.attr("data-value", "60");
 
 let flagDefMk = $('.flags-def-mk');
 let flagDefCr = $('.flags-def-cr');
 let flagDefBg = $('.flags-def-bg');
 let flagDefRs = $('.flags-def-rs');
+let defMk = $('.def-mk');
+let defHr = $('.def-hr');
+let defBg = $('.def-bg');
+let defRs = $('.def-rs');
 
 flagDefMk.css({ 'width': '50%' });
+defMk.attr("data-value", "50");
 flagDefCr.css({ 'width': '90%' });
+defHr.attr("data-value", "90");
 flagDefBg.css({ 'width': '80%' });
+defBg.attr("data-value", "80");
 flagDefRs.css({ 'width': '60%' });
+defRs.attr("data-value", "60");
 
 let flagTeamMk = $('.flags-team-mk');
 let flagTeamCr = $('.flags-team-cr');
 let flagTeamBg = $('.flags-team-bg');
 let flagTeamRs = $('.flags-team-rs');
+let teamMk = $('.team-mk');
+let teamHr = $('.team-hr');
+let teamBg = $('.team-bg');
+let teamRs = $('.team-rs');
 
 flagTeamMk.css({ 'width': '50%' });
+teamMk.attr("data-value", "50");
 flagTeamCr.css({ 'width': '90%' });
+teamHr.attr("data-value", "90");
 flagTeamBg.css({ 'width': '80%' });
+teamBg.attr("data-value", "80");
 flagTeamRs.css({ 'width': '60%' });
+teamRs.attr("data-value", "60");
 
 let flagIndMk = $('.flags-ind-mk');
 let flagIndCr = $('.flags-ind-cr');
 let flagIndBg = $('.flags-ind-bg');
 let flagIndRs = $('.flags-ind-rs');
+let indMk = $('.ind-mk');
+let indHr = $('.ind-hr');
+let indBg = $('.ind-bg');
+let indRs = $('.ind-rs');
 
 flagIndMk.css({ 'width': '20%' });
+indMk.attr("data-value", "20");
 flagIndCr.css({ 'width': '90%' });
+indHr.attr("data-value", "90");
 flagIndBg.css({ 'width': '80%' });
+indBg.attr("data-value", "80");
 flagIndRs.css({ 'width': '60%' });
+indRs.attr("data-value", "60");
 
 let flagProMk = $('.flags-pro-mk');
 let flagProCr = $('.flags-pro-cr');
 let flagProBg = $('.flags-pro-bg');
 let flagProRs = $('.flags-pro-rs');
+let proMk = $('.pro-mk');
+let proHr = $('.pro-hr');
+let proBg = $('.pro-bg');
+let proRs = $('.pro-rs');
+
 
 flagProMk.css({ 'width': '50%' });
+proMk.attr("data-value", "50");
 flagProCr.css({ 'width': '20%' });
+proHr.attr("data-value", "20");
 flagProBg.css({ 'width': '80%' });
+proBg.attr("data-value", "80");
 flagProRs.css({ 'width': '60%' });
+proRs.attr("data-value", "60");
 
 let flagComMk = $('.flags-com-mk');
 let flagComCr = $('.flags-com-cr');
 let flagComBg = $('.flags-com-bg');
 let flagComRs = $('.flags-com-rs');
+let comMk = $('.com-mk');
+let comHr = $('.com-hr');
+let comBg = $('.com-bg');
+let comRs = $('.com-rs');
+
 
 flagComMk.css({ 'width': '50%' });
+comMk.attr("data-value", "50");
 flagComCr.css({ 'width': '90%' });
+comHr.attr("data-value", "90");
 flagComBg.css({ 'width': '80%' });
+comBg.attr("data-value", "80");
 flagComRs.css({ 'width': '60%' });
+comRs.attr("data-value", "60");
 
 let flagOrgMk = $('.flags-org-mk');
 let flagOrgCr = $('.flags-org-cr');
 let flagOrgBg = $('.flags-org-bg');
 let flagOrgRs = $('.flags-org-rs');
+let orgMk = $('.org-mk');
+let orgHr = $('.org-hr');
+let orgBg = $('.org-bg');
+let orgRs = $('.org-rs');
 
 flagOrgMk.css({ 'width': '50%' });
+orgMk.attr("data-value", "50");
 flagOrgCr.css({ 'width': '90%' });
+orgHr.attr("data-value", "90");
 flagOrgBg.css({ 'width': '80%' });
+orgBg.attr("data-value", "80");
 flagOrgRs.css({ 'width': '60%' });
+orgRs.attr("data-value", "60");
 
 
 let flagBenMk = $('.flags-ben-mk');
 let flagBenCr = $('.flags-ben-cr');
 let flagBenBg = $('.flags-ben-bg');
 let flagBenRs = $('.flags-ben-rs');
+let benMk = $('.ben-mk');
+let benHr = $('.ben-hr');
+let benBg = $('.ben-bg');
+let benRs = $('.ben-rs');
 
 flagBenMk.css({ 'width': '50%' });
+benMk.attr("data-value", "50");
 flagBenCr.css({ 'width': '90%' });
+benHr.attr("data-value", "90");
 flagBenBg.css({ 'width': '30%' });
+benBg.attr("data-value", "30");
 flagBenRs.css({ 'width': '80%' });
+benRs.attr("data-value", "80");
+
+
+
+
+
+$(function () {
+
+    $('.high').on('click', function () {
+        $(this).parent().siblings().children('li').sort(sort_li_low).appendTo($(this).parent().siblings('ol'));
+        $(this).css({ 'background-color': "#6630D8", 'color': 'white' });
+        $(this).siblings('.low').css({ 'background-color': "black", 'color': 'grey' });
+
+
+    })
+    $('.high').trigger('click');
+    $('.low').on('click', function () {
+        $(this).parent().siblings().children('li').sort(sort_li).appendTo($(this).parent().siblings('ol'));
+        var list = $(this).parent().siblings().find("li");
+        var count = $(list).length;
+        list.each(function () {
+            $(this).attr("value", count--);
+        });
+        $(this).css({ 'background-color': "#6630D8", 'color': 'white' });
+        $(this).siblings('.high').css({ 'background-color': "black", 'color': 'grey' });
+
+    })
+
+});
+// var list = $("#list").find("li");
+
+// // count the total number of <li>'s
+// var count = $(list).length;
+
+// // loop through each <li> and set value to a decreasing value of count
+// list.each(function () {
+
+//     $(this).attr("value", count--);
+
+// });
+
+function sort_li(a, b) {
+    return ($(b).data('value')) < ($(a).data('value')) ? 1 : -1;
+}
+function sort_li_low(a, b) {
+    return ($(b).data('value')) > ($(a).data('value')) ? 1 : -1;
+}
 
 
 
