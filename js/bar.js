@@ -295,9 +295,6 @@ flagBenRs.css({ 'width': '80%' });
 benRs.attr("data-value", "80");
 
 
-
-
-
 $(function () {
 
     $('.high').on('click', function () {

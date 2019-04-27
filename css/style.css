@@ -332,12 +332,12 @@ body {
     margin: 0 1%;
 }
 
-ol span {
+.span-ol {
     font-size: 1.8rem;
     color: #333;
 }
 
-ol li {
+.flexOl {
     margin-bottom: 1rem;
 }
 
@@ -856,8 +856,8 @@ ul span {
 
 .flags-size {
     background-color: #cfcfcf;
-    padding: 7% 3%;
-    margin-top: -11%;
+    padding: 5% 3%;
+    margin-top: -9%;
     margin-left: -10px;
 }
 
