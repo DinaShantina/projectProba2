@@ -835,8 +835,9 @@ ul span {
 
 .list-group-item {
     display: list-item;
-    padding: 15px 0 0 10px;
-    margin: 9px 0 0 30px;
+    padding: 18px 0 0 10px;
+    margin: 4px 0 0 30px;
+    border-radius: 4px;
 }
 
 .list-group {
@@ -852,22 +853,28 @@ ul span {
 
 .text-country {
     font-size: 1.6rem;
+    margin-top: 7%;
+}
+
+.wtf span:last-child {
+    margin-top: 7%;
 }
 
 .flags-size {
     background-color: #cfcfcf;
-    padding: 7% 3%;
+    padding: 6% 3%;
     margin-top: -11%;
     margin-left: -10px;
+    border-radius: 4px;
 }
 
-.border-top {
+/* .border-top {
     border-top-left-radius: 4px;
 }
 
 .border-bottom {
     border-bottom-left-radius: 4px;
-}
+} */
 
 .no-pad {
     position: relative;
@@ -884,11 +891,14 @@ ul span {
 
 .wtf {
     position: absolute;
-    display: inline-block;
+    /* display: inline-block; */
     top: 50%;
     padding-left: 5%;
     transform: translateY(-50%);
     color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .seventhRow {
